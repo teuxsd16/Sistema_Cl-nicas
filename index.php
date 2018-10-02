@@ -59,7 +59,7 @@
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
         <img class="img-fluid mb-5 d-block mx-auto" src="img/top.png" width="300" height="300" alt="">
-        <h1 class="text-uppercase mb-0">Simplificidade</h1>
+        <h1 class="text-uppercase mb-0">Simplicidade</h1>
         <hr class="star-light">
         <h2 class="font-weight-light mb-0">Encontre seus serviços médicos na cidade de Jequié</h2>
       </div>
@@ -140,19 +140,9 @@
       <div class="container">
         <h2 class="text-center text-uppercase text-white">Sobre</h2>
         <hr class="star-light mb-5">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-          </div>
-        </div>
-        <div class="text-center mt-4">
-          <a class="btn btn-xl btn-outline-light" href="#">
-            <i class="fas fa-download mr-2"></i>
-            Download Now!
-          </a>
+            <p class="lead" align="justify" style="margin-right: 20%; margin-left: 20%;">
+              O software SearchDoctor foi desenvolvido com a finalidade tornar simples a localização de serviços médicos disponíveis na cidade de Jequié. Esse software permite que você descubra quais ambientes médicos são os mais recomendados para que você possa escolher de maneira mais eficiente quando for cuidar da sua saúde e da sua família.
+            </p>
         </div>
       </div>
     </section>
@@ -169,36 +159,36 @@
             <form name="sentMessage" id="contactForm" novalidate="novalidate">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Name</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                  <label>Nome</label>
+                  <input class="form-control" id="name" type="text" placeholder="Nome" required="required" data-validation-required-message="Por favor digite seu nome.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Email Address</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                  <label>Email</label>
+                  <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Por favor digite seu email.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Phone Number</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                  <label>Número de Telefone</label>
+                  <input class="form-control" id="phone" type="tel" placeholder="Telefone" required="required" data-validation-required-message="Por favor digite seu número de telefone.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <label>Menssagem</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Menssagem" required="required" data-validation-required-message="Por favor digite sua menssagem"></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <br>
               <div id="success"></div>
               <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Enviar</button>
               </div>
             </form>
           </div>
@@ -211,12 +201,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">2215 John Daniel Drive
-              <br>Clark, MO 65243</p>
+            <h4 class="text-uppercase mb-4">Telefones</h4>
+            <p class="lead mb-0">(73)-988040169
+              <br>(73)-3525-4525</p>
           </div>
           <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <h4 class="text-uppercase mb-4">Redes sociais</h4>
             <ul class="list-inline mb-0">
               <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
@@ -233,22 +223,11 @@
                   <i class="fab fa-fw fa-twitter"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fab fa-fw fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fab fa-fw fa-dribbble"></i>
-                </a>
-              </li>
             </ul>
           </div>
           <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
-            <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-              <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+            <h4 class="text-uppercase mb-4">Sobre a CTech</h4>
+            <p class="lead mb-0" align="justify">Equipe de desenvolvimento focada em aplicativos que facilitem a vida das pessoas.</p>
           </div>
         </div>
       </div>
@@ -256,7 +235,7 @@
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; Your Website 2018</small>
+        <small>Copyright &copy; Direitos Reservados 2018</small>
       </div>
     </div>
 
