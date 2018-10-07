@@ -46,8 +46,8 @@
 
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
-      <div class="container">
-        <form style="padding-right: 20%; padding-left: 20%;">
+      <div class="container" style="padding-right: 13%; padding-left: 13%;">
+        <form>
           <input placeholder="Digite aqui!" type="text" data-provide="typeahead" class="form-control form-control-lg">
           <br>
           <!-- Filtro de informações -->
@@ -78,6 +78,39 @@
           <br>
           <input type="submit" value="Buscar" class="btn btn-lg btn-secondary btn-block" name="">
         </form>
+        <!-- Tabela de resultado -->
+        <br>
+        <br>
+        <table class="table table-dark bg-secondary">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Primeiro</th>
+              <th scope="col">Último</th>
+              <th scope="col">Nickname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </header>
 
