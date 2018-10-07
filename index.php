@@ -64,6 +64,12 @@
         <h1 class="text-uppercase mb-0">Simplicidade</h1>
         <hr class="star-light">
         <h2 class="font-weight-light mb-0">Encontre seus serviços médicos na cidade de Jequié</h2>
+        <br>
+        <form style="padding-right: 30%; padding-left: 30%;">
+          <input placeholder="Digite aqui!" type="text" data-provide="typeahead" class="form-control form-control-lg">
+          <br>
+          <input type="submit" value="Buscar" class="btn btn-lg btn-dark btn-block" name="">
+        </form>
       </div>
     </header>
 
