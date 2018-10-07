@@ -47,7 +47,7 @@
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
-        <form style="padding-right: 25%; padding-left: 25%;">
+        <form style="padding-right: 20%; padding-left: 20%;">
           <input placeholder="Digite aqui!" type="text" data-provide="typeahead" class="form-control form-control-lg">
           <br>
           <!-- Filtro de informações -->
@@ -65,6 +65,13 @@
                <select id="inputState" class="form-control" name="convenio">
                   <option selected>Convênio</option>
                   <option>...</option>
+              </select>
+            </div>
+            <div class="col">
+               <select id="inputState" class="form-control" name="convenio">
+                  <option selected>Avaliação</option>
+                  <option>Mais avalidos</option>
+                  <option>Menos avalidos</option>
               </select>
             </div>
           </div>
