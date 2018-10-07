@@ -68,7 +68,7 @@
         <form style="padding-right: 30%; padding-left: 30%;">
           <input placeholder="Digite aqui!" type="text" data-provide="typeahead" class="form-control form-control-lg">
           <br>
-          <input type="submit" value="Buscar" class="btn btn-lg btn-dark btn-block" name="">
+          <input type="submit" value="Buscar" class="btn btn-lg btn-secondary btn-block" name="">
         </form>
       </div>
     </header>
