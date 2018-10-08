@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a href="login.php" class="nav-link btn-primary py-3 px-0 px-lg-3 rounded ">Longin</a>
+              <a href="login.php" class="nav-link btn-primary py-3 px-0 px-lg-3 rounded ">Login</a>
             </li>
           </ul>
         </div>
@@ -70,8 +70,8 @@
             <div class="col">
                <select id="inputState" class="form-control" name="convenio">
                   <option selected>Avaliação</option>
-                  <option>Mais avalidos</option>
-                  <option>Menos avalidos</option>
+                  <option>Melhores avaliados</option>
+                  <option>Piores avaliados</option>
               </select>
             </div>
           </div>
