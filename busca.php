@@ -56,12 +56,6 @@
               <input type="text" class="form-control" placeholder="Localização" name="localizacao">
             </div>
             <div class="col">
-               <select id="inputState" class="form-control" name="servico">
-                  <option selected>Serviço</option>
-                  <option>...</option>
-              </select>
-            </div>
-            <div class="col">
                <select id="inputState" class="form-control" name="convenio">
                   <option selected>Convênio</option>
                   <option>...</option>
