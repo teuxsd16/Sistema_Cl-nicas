@@ -50,7 +50,7 @@
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contato</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a href="login.php" class="nav-link btn-primary py-3 px-0 px-lg-3 rounded ">Login</a>
+              <a href="http://localhost/Sistema_Clinicas/index.php/login/" class="nav-link btn-primary py-3 px-0 px-lg-3 rounded ">Login</a>
             </li>
           </ul>
         </div>
