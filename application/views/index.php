@@ -281,7 +281,7 @@
               <h2 class="text-secondary text-uppercase mb-0">Classificação</h2>
               <hr class="star-dark mb-5">
               <img class="img-fluid mb-5" src=<?= base_url("img/portfolio/circus.png") ?> alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <p class="mb-5">Avalie as clínicas que você foi e ajude outras pessoas a escolher o melhor serviço. Ao ver a avaliação talvez a clínica melhore seu atentimento.</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Fechar</a>
