@@ -13,14 +13,14 @@
 
     <!-- Custom fonts for this template -->
     <link href=<?= base_url("vendor/fontawesome-free/css/all.min.css") ?> rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
     <link href=<?= base_url("vendor/magnific-popup/magnific-popup.css") ?> rel="stylesheet" type="text/css">
 
-    <!-- Custom styles for this template -->
-    <link href=<?= base_url("css/freelancer.min.css") ?> rel="stylesheet">
+    <!-- Custom styles for this template 
+    <link href=<?= base_url("css/freelancer.min.css") ?> rel="stylesheet">-->
+    <link href="<?= base_url("css/landing-page.css") ?>" rel="stylesheet">
 
     <style type="text/css">
 
@@ -28,24 +28,18 @@
 
   </head>
 
-  <body id="page-top" class="bg-primary">
+  <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <nav class="navbar navbar-dark static-top" style="background-color: #2c3e50!important;">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href=<?= base_url() ?>>Search Doctor</a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a href="login.php" class="nav-link btn-primary py-3 px-0 px-lg-3 rounded ">Login</a>
-            </li>
-          </ul>
-        </div>
+        <a class="navbar-brand" href="#">Search Doctor</a>
       </div>
     </nav>
+    
 
     <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center" style="background-color: #18bc9c!important;padding-top: 100px;">
       <div class="container" style="padding-right: 13%; padding-left: 13%;">
         <form>
           <input placeholder="Digite aqui!" type="text" data-provide="typeahead" class="form-control form-control-lg">
@@ -81,7 +75,7 @@
         <!-- Tabela de resultado -->
         <br>
         <br>
-        <table class="table table-dark bg-secondary">
+        <table class="table bg-dark table-dark">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -94,8 +88,8 @@
             <tr>
               <th scope="row">1</th>
               <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>Lee</td>
+              <td>@nct</td>
             </tr>
             <tr>
               <th scope="row">2</th>
@@ -117,7 +111,7 @@
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src=<?= base_url("vendor/jquery/jquery.min.js") ?>></script>
+    <script src="<?= base_url("vendor/jquery/jquery.min.js") ?>"></script>
     <script src=<?= base_url("vendor/bootstrap/js/bootstrap.min.js") ?>></script>
 
     <!-- Plugin JavaScript -->
@@ -128,8 +122,8 @@
     <script src=<?= base_url("js/jqBootstrapValidation.js") ?>></script>
     <script src=<?= base_url("js/contact_me.js") ?>></script>
 
-    <!-- Custom scripts for this template -->
-    <script src=<?= base_url("js/freelancer.min.js") ?>></script>
+    <!-- Custom scripts for this template 
+    <script src=<?= base_url("js/freelancer.min.js") ?>></script>-->
 
   </body>
 
