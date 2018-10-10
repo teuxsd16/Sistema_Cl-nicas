@@ -1,8 +1,8 @@
 <?php
-class Cliente_model extends MY_Model {
+class Servico_model extends MY_Model {
     function __construct() {
         parent::__construct();
-        $this->table = 'cliente';
+        $this->table = 'servico';
     }
     
 }
