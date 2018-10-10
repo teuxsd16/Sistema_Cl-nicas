@@ -49,7 +49,7 @@
             <form method="post" action=<?= base_url('buscar') ?>>
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="email" class="form-control form-control-lg" placeholder="Busque aqui..." style="height: 150%;">
+                  <input type="text" class="form-control form-control-lg" placeholder="Busque aqui..." style="height: 150%;">
                 </div>
                 <div class="col-12 col-md-3">
                   <button type="submit" class="btn btn-lg btn-block text-white" style="background-color: #2c3e50!important; height: 150%;">Buscar</button>
