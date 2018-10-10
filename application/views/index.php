@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -9,303 +11,186 @@
     <title>Search Doctor</title>
 
     <!-- Bootstrap core CSS -->
-    <link href=<?= base_url("vendor/bootstrap/css/bootstrap.min.css") ?> rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href=<?= base_url("vendor/fontawesome-free/css/all.min.css")?> rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link href=<?= base_url("vendor/magnific-popup/magnific-popup.css")?> rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href=<?= base_url("css/freelancer.min.css") ?> rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
 
     <style type="text/css">
-
+      
     </style>
 
   </head>
 
-  <body id="page-top">
+  <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <nav class="navbar navbar-dark static-top" style="background-color: #2c3e50!important;">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Search Doctor</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Recursos</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Sobre</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contato</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a href=<?= base_url('login') ?> class="nav-link btn-primary py-3 px-0 px-lg-3 rounded ">Login</a>
-            </li>
-          </ul>
-        </div>
+        <a class="navbar-brand" href="#">Search Doctor</a>
+        <a class="btn btn-primary btn-lg" href="#" style="background-color: #18bc9c!important;">Sign In</a>
       </div>
     </nav>
 
-    <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
+    <!-- Masthead -->
+    <header class="masthead text-white text-center bg-primary" style="background-color: #18bc9c!important;">
+      <div class="overlay"></div>
       <div class="container">
-        <h1 class="text-uppercase mb-0">Simplicidade</h1>
-        <hr class="star-light">
-        <h2 class="font-weight-light mb-0">Encontre seus serviços médicos na cidade de Jequié</h2>
-        <br>
-        <form style="padding-right: 30%; padding-left: 30%;" action=<?= base_url('buscar') ?>>
-          <input placeholder="Digite aqui!" type="text" data-provide="typeahead" class="form-control form-control-lg">
-          <br>
-          <input type="submit" value="Buscar" class="btn btn-lg btn-secondary btn-block" name="">
-        </form>
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5">Encontre seus serviços médicos na cidade de Jequié!</h1>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <input type="email" class="form-control form-control-lg" placeholder="Busque aqui..." style="height: 150%;">
+                </div>
+                <div class="col-12 col-md-3">
+                  <button type="submit" class="btn btn-lg btn-block text-white" style="background-color: #2c3e50!important; height: 150%;">Buscar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
+    <!-- Icons Grid -->
+    <section class="features-icons bg-light text-center">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Recursos</h2>
-        <hr class="star-dark mb-5">
         <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-screen-desktop m-auto text-dark"></i>
               </div>
-              <img class="img-fluid" src=<?= base_url("img/portfolio/cake.png") ?> alt="">
-            </a>
+              <h3>Simplicidade</h3>
+              <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-layers m-auto text-dark"></i>
               </div>
-              <img class="img-fluid" src=<?= base_url("img/portfolio/circus.png") ?> alt="">
-            </a>
+              <h3>Filtre os dados</h3>
+              <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+            </div>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-check m-auto text-dark"></i>
               </div>
-              <img class="img-fluid" src=<?= base_url("img/portfolio/cabin.png") ?> alt="">
-            </a>
+              <h3>Avaliações</h3>
+              <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">Sobre</h2>
-        <hr class="star-light mb-5">
-            <p class="lead" align="justify" style="margin-right: 20%; margin-left: 20%;">
-              O software SearchDoctor foi desenvolvido com a finalidade tornar simples a localização de serviços médicos disponíveis na cidade de Jequié. Esse software permite que você descubra quais ambientes médicos são os mais recomendados para que você possa escolher de maneira mais eficiente quando for cuidar da sua saúde e da sua família.
-            </p>
+    <!-- Image Showcases -->
+    <section class="showcase" style="background-color: #2c3e50!important; color: white;">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Sobre o CTech</h2>
+            <p class="lead mb-0" align="justify">Formada em 2017 pelos alunos do curso integrado de informática do Instituto Federal da Bahia, a Cagaço Tech é uma equipe de desenvolvimento de aplicativos WEB focados em facilitar a vida das pessoas. </p>
+          </div>
+        </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- Testimonials -->
+    <section class="testimonials text-center bg-light">
       <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Contate-me</h2>
-        <hr class="star-dark mb-5">
+        <h2 class="mb-5">O que as pessoas acham</h2>
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Nome</label>
-                  <input class="form-control" id="name" type="text" placeholder="Nome" required="required" data-validation-required-message="Por favor digite seu nome.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Email</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Por favor digite seu email.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Número de Telefone</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Telefone" required="required" data-validation-required-message="Por favor digite seu número de telefone.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Menssagem</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Menssagem" required="required" data-validation-required-message="Por favor digite sua menssagem"></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Enviar</button>
-              </div>
-            </form>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+              <h5>Margaret E.</h5>
+              <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
+              <h5>Fred S.</h5>
+              <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
+              <h5>Sarah	W.</h5>
+              <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer bg-light" >
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Telefones</h4>
-            <p class="lead mb-0">(73)-988040169
-              <br>(73)-3525-4525</p>
+          <div class="col-lg-6 h-100 text-center text-lg-left">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
           </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Redes sociais</h4>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fab fa-fw fa-facebook-f"></i>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-twitter-square fa-2x fa-fw"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fab fa-fw fa-google-plus-g"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fab fa-fw fa-twitter"></i>
+                <a href="#">
+                  <i class="fab fa-instagram fa-2x fa-fw"></i>
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">Sobre a CTech</h4>
-            <p class="lead mb-0" align="justify">Equipe de desenvolvimento focada em aplicativos que facilitem a vida das pessoas.</p>
           </div>
         </div>
       </div>
     </footer>
 
-    <div class="copyright py-4 text-center text-white">
-      <div class="container">
-        <small>Copyright &copy; Direitos Reservados 2018</small>
-      </div>
-    </div>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
-      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src=<?= base_url("img/portfolio/cabin.png") ?> alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Fechar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Busca</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src=<?= base_url("img/portfolio/cake.png") ?> alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Fechar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Classificação</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src=<?= base_url("img/portfolio/circus.png") ?> alt="">
-              <p class="mb-5">Avalie as clínicas que você foi e ajude outras pessoas a escolher o melhor serviço. 
-              Com o sistema de avaliações é esperado que haja melhora dos serviços prestados.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Fechar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap core JavaScript -->
-    <script src=<?= base_url("vendor/jquery/jquery.min.js") ?>></script>
-    <script src=<?= base_url("vendor/bootstrap/js/bootstrap.min.js") ?>></script>
-
-    <!-- Plugin JavaScript -->
-    <script src=<?= base_url("vendor/jquery-easing/jquery.easing.min.js") ?>></script>
-    <script src=<?= base_url("vendor/magnific-popup/jquery.magnific-popup.min.js") ?>></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src=<?= base_url("js/jqBootstrapValidation.js") ?>></script>
-    <script src=<?= base_url("js/contact_me.js") ?>></script>
-
-    <!-- Custom scripts for this template -->
-    <script src=<?= base_url("js/freelancer.min.js") ?>></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 
