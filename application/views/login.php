@@ -87,6 +87,15 @@
             <input type="password"required autocomplete="off"/>
           </div>
 
+          <div class="field-wrap">
+            <select>
+              <option>Cliente</option>
+              <option>Médico</option>
+              <option>Clínica</option>
+            </select>
+          </div>
+
+          
           <button type="submit" class="button button-block"/>Cadastrar</button>
 
           </form>

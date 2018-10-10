@@ -12,7 +12,7 @@
     <link href=<?= base_url("vendor/bootstrap/css/bootstrap.min.css") ?> rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href=<?= base_url("vendor/fontawesome-free/css/all.min.css" rel="stylesheet") ?> type="text/css">
+    <link href=<?= base_url("vendor/fontawesome-free/css/all.min.css") ?> rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -33,7 +33,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.php">Search Doctor</a>
+        <a class="navbar-brand js-scroll-trigger" href=<?= base_url() ?>>Search Doctor</a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
