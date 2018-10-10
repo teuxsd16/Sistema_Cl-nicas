@@ -92,14 +92,14 @@
           </div>
 
           <div class="field-wrap">
-            <select>
-              <option>Cliente</option>
-              <option>Médico</option>
-              <option>Clínica</option>
+            <select id="select-tipo-usuario">
+              <option value="cliente">Cliente</option>
+              <option value="medico">Médico</option>
+              <option value="clinica">Clínica</option>
             </select>
           </div>
 
-          <div class="invisible">
+          <div id="div-medico" class="collapse">
             <!-- Médico -->
             <div class="field-wrap">
               <label>
@@ -108,7 +108,7 @@
               <input name="crn" type="text"required autocomplete="off"/>
             </div>
           </div>  
-          <div class="invisible">
+          <div id="div-clinicas" class="collapse">
             <!-- Clínica/posto -->
             <div class="field-wrap">
               <label>
@@ -118,29 +118,27 @@
             </div>
           </div>
 
-          <!-- Endereço -->
-          <div class="field-wrap">
-            <label>
-              Bairro<span class="req">*</span>
-            </label>
-            <input name="bairro" type="text"required autocomplete="off"/>
+          <div id="div-endereco" class="collapse">
+            <!-- Endereço -->
+            <div class="field-wrap">
+              <label>
+                Bairro<span class="req">*</span>
+              </label>
+              <input name="bairro" type="text"required autocomplete="off"/>
+            </div>
+            <div class="field-wrap">
+              <label>
+                Rua<span class="req">*</span>
+              </label>
+              <input name="rua" type="text"required autocomplete="off"/>
+            </div>
+            <div class="field-wrap">
+              <label>
+                Número<span class="req">*</span>
+              </label>
+              <input name="numero" type="text"required autocomplete="off"/>
+            </div>
           </div>
-          <div class="field-wrap">
-            <label>
-              Rua<span class="req">*</span>
-            </label>
-            <input name="rua" type="text"required autocomplete="off"/>
-          </div>
-          <div class="field-wrap">
-            <label>
-              Número<span class="req">*</span>
-            </label>
-            <input name="numero" type="text"required autocomplete="off"/>
-          </div>
-
-
-
-
           
           <button type="submit" class="button button-block"/>Cadastrar</button>
 
@@ -151,13 +149,25 @@
 
 </div> <!-- /form -->
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src=<?= base_url("js/index.js") ?>></script>
 
-
-
-    <script  src=<?= base_url("js/index.js") ?>></script>
-
-
-
+  <script type="text/javascript">
+    $('#select-tipo-usuario').on('change', function() {
+      if ($(this).find('option:selected').val() == 'medico') {
+        $('#div-medico').collapse();
+        $('#div-endereco').collapse();
+      } else if ($(this).find('option:selected').val() == 'clinicas') {
+        $('#div-clinicas').collapse();
+        $('#div-endereco').collapse();
+      } else if ($(this).find('option:selected').val() == 'cliente') {
+        $('#div-endereco').collapse();
+      } else {
+        $('#div-medico').collapse();
+        $('#div-clinicas').collapse();
+        $('#div-endereco').collapse();
+      }
+    });
+  </script>
 
 </body>
 
