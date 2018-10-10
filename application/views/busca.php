@@ -40,7 +40,7 @@
 
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center" style="background-color: #18bc9c!important;padding-top: 100px;">
-      <div class="container" style="padding-right: 13%; padding-left: 13%;">
+      <div class="container" style="padding-right: 10%; padding-left: 10%;">
         <form>
           <input placeholder="Digite aqui!" type="text" data-provide="typeahead" class="form-control form-control-lg">
           <br>
@@ -49,6 +49,10 @@
             <div class="col">
               <input type="text" class="form-control" placeholder="Localização" name="localizacao">
             </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Médico" name="medico">
+            </div>
+            
             <div class="col">
                <select id="inputState" class="form-control" name="servico">
                   <option selected>Serviço</option>
@@ -70,7 +74,7 @@
             </div>
           </div>
           <br>
-          <input type="submit" value="Buscar" class="btn btn-lg btn-secondary btn-block" name="">
+          <input type="submit" value="Buscar" class="btn btn-lg btn-dark btn-block" name="">
         </form>
         <!-- Tabela de resultado -->
         <br>
