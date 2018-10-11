@@ -57,14 +57,14 @@
         <div id="signup">
           <h1>Cadastre-se grátis</h1>
 
-          <form action="/" method="post">
+          <form action="login/cadastrar/" method="post">
 
 
           <div class="field-wrap">
             <label>
               Nome<span class="req">*</span>
             </label>
-            <input type="text" required autocomplete="off" />
+            <input name="nome" type="text" required autocomplete="off" />
 
           </div>
 
@@ -74,21 +74,21 @@
             <label>
               Email<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+            <input name="email" type="email" required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
             <label>
               Telefone<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            <input name="tel" type="tel" required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
             <label>
               Senha<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            <input name="senha" type="password" required autocomplete="off"/>
           </div>
 
           <div class="field-wrap">
