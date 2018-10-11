@@ -64,11 +64,11 @@
     <!-- Icons Grid -->
     <section class="features-icons bg-light text-center">
       <div class="container">
-        <div class="row">
+        <div class="row" style="color:  #2c3e50!important;">
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-                <i class="icon-screen-desktop m-auto text-dark"></i>
+                <i class="icon-screen-desktop m-auto"></i>
               </div>
               <h3>Simplicidade</h3>
               <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
@@ -77,7 +77,7 @@
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-                <i class="icon-layers m-auto text-dark"></i>
+                <i class="icon-layers m-auto"></i>
               </div>
               <h3>Filtre os dados</h3>
               <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
@@ -86,7 +86,7 @@
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-                <i class="icon-check m-auto text-dark"></i>
+                <i class="icon-check m-auto"></i>
               </div>
               <h3>Avaliações</h3>
               <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
