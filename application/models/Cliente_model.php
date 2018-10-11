@@ -4,5 +4,4 @@ class Cliente_model extends MY_Model {
         parent::__construct();
         $this->table = 'cliente';
     }
-    
 }

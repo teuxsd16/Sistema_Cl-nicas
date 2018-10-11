@@ -4,5 +4,4 @@ class Servico_model extends MY_Model {
         parent::__construct();
         $this->table = 'servico';
     }
-    
 }
