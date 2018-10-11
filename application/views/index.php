@@ -101,7 +101,7 @@
       <div class="container-fluid p-0">
         <div class="row no-gutters">
 
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url(<?= base_url('img/bg-showcase-1.jpg') ?>);"></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url(<?= base_url('img/ic.png') ?>); background-position: center;"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
             <h2>Sobre o CTech</h2>
             <p class="lead mb-0" align="justify">Formada em 2017 pelos alunos do curso integrado de informática do Instituto Federal da Bahia, a Cagaço Tech é uma equipe de desenvolvimento de aplicativos WEB focados em facilitar a vida das pessoas. </p>
