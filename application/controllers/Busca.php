@@ -5,6 +5,6 @@ class Busca extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('busca');
+		$this->load->view('app/busca');
 	}
 }
