@@ -21,8 +21,8 @@
       <h1 style="font-weight: bold; font-size: 30pt;">SearchDoctor</h1>
 
       <ul class="tab-group">
-        <li class="tab"><a href="#signup">Cadastrar</a></li>
-        <li class="tab active"><a href="#login">Log In</a></li>
+        <li id="tab-register" class="tab"><a href="#register">Cadastrar</a></li>
+        <li id="tab-login" class="tab"><a href="#login">Log In</a></li>
       </ul>
 
       <div class="tab-content">
@@ -31,115 +31,108 @@
         <div id="login">
           <h1>Bem vindo!</h1>
 
-          <form action="/" method="post">
+          <form action=<?= base_url('login') ?> method="post">
+              <div class="field-wrap">
+              <label>
+                Email<span class="req">*</span>
+              </label>
+              <input type="email"required autocomplete="off"/>
+            </div>
 
             <div class="field-wrap">
-            <label>
-              Email<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
+              <label>
+                Senha<span class="req">*</span>
+              </label>
+              <input type="password"required autocomplete="off"/>
+            </div>
 
-          <div class="field-wrap">
-            <label>
-              Senha<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
+            <p class="forgot"><a href="#">Forgot Password?</a></p>
 
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
-
-          <button class="button button-block"/>Log In</button>
-
+            <button class="button button-block"/>Log In</button>
           </form>
 
         </div>
-        <div id="signup">
+        <div id="register">
           <h1>Cadastre-se grátis</h1>
 
-          <form action="login/cadastrar/" method="post">
-
-
-          <div class="field-wrap">
-            <label>
-              Nome<span class="req">*</span>
-            </label>
-            <input name="nome" type="text" required autocomplete="off" />
-
-          </div>
-
-
-
-          <div class="field-wrap">
-            <label>
-              Email<span class="req">*</span>
-            </label>
-            <input name="email" type="email" required autocomplete="off"/>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Telefone<span class="req">*</span>
-            </label>
-            <input name="tel" type="tel" required autocomplete="off"/>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Senha<span class="req">*</span>
-            </label>
-            <input name="senha" type="password" required autocomplete="off"/>
-          </div>
-
-          <div class="field-wrap">
-            <select id="select-tipo-usuario">
-              <option value="cliente">Cliente</option>
-              <option value="medico">Médico</option>
-              <option value="clinica">Clínica</option>
-            </select>
-          </div>
-
-          <div id="div-medico" class="collapse">
-            <!-- Médico -->
+          <form action=<?= base_url('register') ?> method="post">
             <div class="field-wrap">
               <label>
-                CRM<span class="req">*</span>
+                Nome<span class="req">*</span>
               </label>
-              <input name="crn" type="text"required autocomplete="off"/>
+              <input name="nome" type="text" required autocomplete="off" />
+
             </div>
-          </div>
-          <div id="div-clinica" class="collapse">
-            <!-- Clínica/posto -->
+
             <div class="field-wrap">
               <label>
-                CNPJ<span class="req">*</span>
+                Email<span class="req">*</span>
               </label>
-              <input name="cnpj" type="text"required autocomplete="off"/>
-            </div>
-          </div>
-
-          <!-- Endereço -->
-          <div class="field-wrap">
-            <label>
-              Bairro<span class="req">*</span>
-            </label>
-            <input name="bairro" type="text"required autocomplete="off"/>
-          </div>
-          <div class="field-wrap">
-            <label>
-              Rua<span class="req">*</span>
-            </label>
-            <input name="rua" type="text"required autocomplete="off"/>
-          </div>
-          <div class="field-wrap">
-            <label>
-              Número<span class="req">*</span>
-            </label>
-            <input name="numero" type="text"required autocomplete="off"/>
+              <input name="email" type="email" required autocomplete="off"/>
             </div>
 
-          <button type="submit" class="button button-block"/>Cadastrar</button>
+            <div class="field-wrap">
+              <label>
+                Telefone<span class="req">*</span>
+              </label>
+              <input name="tel" type="tel" required autocomplete="off"/>
+            </div>
 
+            <div class="field-wrap">
+              <label>
+                Senha<span class="req">*</span>
+              </label>
+              <input name="senha" type="password" required autocomplete="off"/>
+            </div>
+
+            <div class="field-wrap">
+              <select id="select-tipo-usuario">
+                <option value="cliente">Cliente</option>
+                <option value="medico">Médico</option>
+                <option value="clinica">Clínica</option>
+              </select>
+            </div>
+
+            <div id="div-medico" class="collapse">
+              <!-- Médico -->
+              <div class="field-wrap">
+                <label>
+                  CRM<span class="req">*</span>
+                </label>
+                <input name="crn" type="text"required autocomplete="off"/>
+              </div>
+            </div>
+            <div id="div-clinica" class="collapse">
+              <!-- Clínica/posto -->
+              <div class="field-wrap">
+                <label>
+                  CNPJ<span class="req">*</span>
+                </label>
+                <input name="cnpj" type="text"required autocomplete="off"/>
+              </div>
+            </div>
+
+            <!-- Endereço -->
+            <div class="field-wrap">
+              <label>
+                Bairro<span class="req">*</span>
+              </label>
+              <input name="bairro" type="text"required autocomplete="off"/>
+            </div>
+            <div class="field-wrap">
+              <label>
+                Rua<span class="req">*</span>
+              </label>
+              <input name="rua" type="text"required autocomplete="off"/>
+            </div>
+            <div class="field-wrap">
+              <label>
+                Número<span class="req">*</span>
+              </label>
+              <input name="numero" type="text"required autocomplete="off"/>
+              </div>
+
+            <button type="submit" class="button button-block"/>Cadastrar</button>
           </form>
 
         </div>
@@ -151,6 +144,13 @@
   <script  src=<?= base_url('assets/vendor/bootstrap/js/bootstrap.min.js') ?>></script>
 
   <script type="text/javascript">
+    $(function () {
+      if ('<?= $action ?>' == 'login') {
+        liberarTab('#tab-login a');
+      } else {
+        liberarTab('#tab-register a');
+      }
+    });
     $('#select-tipo-usuario').on('change', function() {
       if ($(this).val() == 'medico') {
         $('#div-medico').collapse('show');
