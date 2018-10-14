@@ -25,6 +25,16 @@
         <li id="tab-login" class="tab"><a href="#login">Log In</a></li>
       </ul>
 
+      <?php if ($this->session->flashdata('error_message')): ?>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Atenção!</strong> <?= $this->session->flashdata('error_message'); ?>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <?php endif; ?>
+
+
       <div class="tab-content">
 
 
@@ -34,16 +44,16 @@
           <form action=<?= base_url('login') ?> method="post">
               <div class="field-wrap">
               <label>
-                Email<span class="req">*</span>
+                Nome de Usuário<span class="req">*</span>
               </label>
-              <input type="email"required autocomplete="off"/>
+              <input name="username" type="text" autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
               <label>
                 Senha<span class="req">*</span>
               </label>
-              <input type="password"required autocomplete="off"/>
+              <input name="password" type="password" autocomplete="off"/>
             </div>
 
             <p class="forgot"><a href="#">Forgot Password?</a></p>

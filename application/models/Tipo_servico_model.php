@@ -2,6 +2,6 @@
 class Servico_model extends My_Model {
     function __construct() {
         parent::__construct();
-        $this->table = 'servico';
+        $this->table = 'tipo_servico';
     }
 }

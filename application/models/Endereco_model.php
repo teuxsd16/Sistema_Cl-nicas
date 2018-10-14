@@ -1,8 +1,8 @@
 <?php
-class Endereco_model extends MY_Model {
+class Endereco_model extends My_Model {
     function __construct() {
         parent::__construct();
         $this->table = 'endereco';
     }
-    
+
 }
