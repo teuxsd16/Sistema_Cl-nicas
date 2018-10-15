@@ -26,11 +26,13 @@ class Auth extends CI_Controller {
 		);
 		$this->form_validation->set_rules($rules);
 
-		$this->load->model('user_model');
-		if ($this->form_validation->run() && $this->user_model->checkLogin($this->input->post())) {
-			redirect('/admin');
-		} else {
-			$this->session->set_flashdata('error_message', 'Dados Incorretos');
+		if ($this->input->method(true) == 'POST') {
+			$this->load->model('user_model');
+			if ($this->form_validation->run() == true && $this->user_model->checkLogin($this->input->post())) {
+				redirect('/admin');
+			} else {
+				$this->session->set_flashdata('error_message', 'Dados Incorretos');
+			}
 		}
 
 		$data['action'] = 'login';
