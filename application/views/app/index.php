@@ -70,7 +70,7 @@
                 <i class="icon-screen-desktop m-auto"></i>
               </div>
               <h3>Simplicidade</h3>
-              <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+              <p class="lead mb-0">Interface sem excessos, só as cores que parecem paletas de algas mas enfim..., para dar destaque ao que importa.
             </div>
           </div>
           <div class="col-lg-4">
@@ -79,7 +79,7 @@
                 <i class="icon-layers m-auto"></i>
               </div>
               <h3>Filtre os dados</h3>
-              <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+              <p class="lead mb-0">Encontre exatamente aquilo que você busca sem perder tempo.
             </div>
           </div>
           <div class="col-lg-4">
@@ -88,7 +88,7 @@
                 <i class="icon-check m-auto"></i>
               </div>
               <h3>Avaliações</h3>
-              <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+              <p class="lead mb-0">Precisa de opiniões sobre as clínicas? O Search Doctor tembém oferece esse serviço.</p>
             </div>
           </div>
         </div>
@@ -147,22 +147,22 @@
           <div class="col-lg-6 h-100 text-center text-lg-left">
             <ul class="list-inline mb-2">
               <li class="list-inline-item">
-                <a href="#">About</a>
+                <a href="#">Sobre</a>
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a href="#">Contact</a>
+                <a href="#">Contato</a>
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
+                <a href="#">Termos de Uso</a>
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
+                <a href="#">Política de Privacidade</a>
               </li>
             </ul>
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Search Doctor 2018. Todos od direitos reservados.</p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
