@@ -118,22 +118,22 @@
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src=<?= base_url('assets/img/testimonials-1.jpg') ?> alt="">
-              <h5>Margaret E.</h5>
-              <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+              <h5>Luísa Ramos</h5>
+              <p class="font-weight-light mb-0">"Estava em busca de uma clínica pediátrica para meu filho que fosse perto de casa. Graças ao Search Doctor eu achei sem precisar sair procurando."</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src=<?= base_url('assets/img/testimonials-2.jpg') ?> alt="">
-              <h5>Fred S.</h5>
-              <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+              <h5>José Bezerra</h5>
+              <p class="font-weight-light mb-0">"Regular."</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src=<?= base_url('assets/img/testimonials-3.jpg') ?> alt="">
-              <h5>Sarah	W.</h5>
-              <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+              <h5>Maria Severina</h5>
+              <p class="font-weight-light mb-0">"Eu gostei do site, as opções de filtragem realmente facilitam muito. Só achei as cores muito escuras. Parece algas de rio."</p>
             </div>
           </div>
         </div>
