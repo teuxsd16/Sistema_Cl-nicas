@@ -158,15 +158,15 @@
                   <div class="row d-none d-sm-flex mb-4">
                     <div class="col-4">
                       <h5 class="text-primary">Bom</h5>
-                      <p>34657</p>
+                      <p>50</p>
                     </div>
                     <div class="col-4">
                       <h5 class="text-primary">Regular</h5>
-                      <p>45673</p>
+                      <p>65</p>
                     </div>
                     <div class="col-4">
                       <h5 class="text-primary">Ruim</h5>
-                      <p>45673</p>
+                      <p>5</p>
                     </div>
                   </div>
                   <div class="chart-container">
@@ -182,20 +182,20 @@
                   <h2 class="card-title text-primary mb-5">Histórico de Performance</h2>
                   <div class="wrapper d-flex justify-content-between">
                     <div class="side-left">
-                      <p class="mb-2">The best performance</p>
+                      <p class="mb-2">Qualidade de serviço</p>
                       <p class="display-3 mb-4 font-weight-light">+45.2%</p>
                     </div>
                     <div class="side-right">
-                      <small class="text-muted">2017</small>
+                      <small class="text-muted">2018</small>
                     </div>
                   </div>
                   <div class="wrapper d-flex justify-content-between">
                     <div class="side-left">
-                      <p class="mb-2">Worst performance</p>
-                      <p class="display-3 mb-5 font-weight-light">-35.3%</p>
+                      <p class="mb-2">Atendimento</p>
+                      <p class="display-3 mb-5 font-weight-light">-0.5%</p>
                     </div>
                     <div class="side-right">
-                      <small class="text-muted">2015</small>
+                      <small class="text-muted">2018</small>
                     </div>
                   </div>
                 </div>
@@ -208,9 +208,9 @@
         <footer class="footer">
           <div class="container-fluid clearfix">
             <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018
-              <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with
-              <i class="mdi mdi-heart text-danger"></i>
+              <a href="http://www.bootstrapdash.com/" target="_blank">Search Doctor</a>. Todos os direitos reservados.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Feito com 
+              <i class="mdi mdi-heart text-danger"></i>.
             </span>
           </div>
         </footer>
