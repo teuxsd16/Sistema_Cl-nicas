@@ -27,62 +27,6 @@
       <div class="navbar-menu-wrapper d-flex align-items-center" style="background-color: #2c3e50">
 
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown">
-            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <i class="mdi mdi-file-document-box"></i>
-              <span class="count">7</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-              <div class="dropdown-item">
-                <p class="mb-0 font-weight-normal float-left">Você tem 10 propostas de consulta
-                </p>
-                <span class="badge badge-info badge-pill float-right">Ver todas</span>
-              </div>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src=<?= base_url('assets/img/faces/face4.jpg') ?> alt="image" class="profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-medium text-dark">David Grey
-                    <span class="float-right font-weight-light small-text">1 Minuto atrás</span>
-                  </h6>
-                  <p class="font-weight-light small-text">
-                    The meeting is cancelled
-                  </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src=<?= base_url('assets/img/faces/face2.jpg') ?> alt="image" class="profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-medium text-dark">Tim Cook
-                    <span class="float-right font-weight-light small-text">15 Minutes ago</span>
-                  </h6>
-                  <p class="font-weight-light small-text">
-                    New product launch
-                  </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src=<?= base_url('assets/img/faces/face3.jpg') ?> alt="image" class="profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-medium text-dark"> Johnson
-                    <span class="float-right font-weight-light small-text">18 Minutes ago</span>
-                  </h6>
-                  <p class="font-weight-light small-text">
-                    Upcoming board meeting
-                  </p>
-                </div>
-              </a>
-            </div>
-          </li>
-
           <li class="nav-item dropdown d-none d-xl-inline-block">
             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
               <span class="profile-text">Richard V.Welsh</span>
@@ -109,22 +53,11 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item nav-profile">
-            <div class="nav-link">
-              <div class="user-wrapper">
-                <div class="profile-image">
-                  <img src=<?= base_url('assets/img/faces/face1.jpg') ?> alt="profile image">
-                </div>
-                <div class="text-wrapper">
-                  <p class="profile-name">Clínica</p>
-                  <div>
-                    <small class="designation text-muted">Manager</small>
-                    <span class="status-indicator online"></span>
-                  </div>
-                </div>
-              </div>
-              <button class="btn btn-success btn-block">Perfil</button>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href=<?= base_url('admin/perfil') ?>>
+              <i class="menu-icon mdi mdi-account"></i>
+              <span class="menu-title">Perfil</span>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href=<?= base_url('admin/servicos') ?>>
@@ -135,7 +68,7 @@
           <li class="nav-item">
             <a class="nav-link" href=<?= base_url('admin/medicos') ?>>
               <i class="menu-icon mdi mdi-backup-restore"></i>
-              <span class="menu-title">Médicos</span>
+              <span class="menu-human">Médicos</span>
             </a>
           </li>
           <li class="nav-item">
@@ -286,8 +219,8 @@
         <footer class="footer">
           <div class="container-fluid clearfix">
             <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018
-              <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with
+              <a href="http://www.bootstrapdash.com/" target="_blank">Search Doctor</a>. Todos os direitos reservados.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Feito com 
               <i class="mdi mdi-heart text-danger"></i>
             </span>
           </div>
