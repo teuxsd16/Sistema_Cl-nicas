@@ -70,7 +70,7 @@
                 <i class="icon-screen-desktop m-auto"></i>
               </div>
               <h3>Simplicidade</h3>
-              <p class="lead mb-0">Interface sem excessos, só as cores que parecem paletas de algas mas enfim..., para dar destaque ao que importa.
+              <p class="lead mb-0">Interface sem excessos para dar destaque ao que importa.
             </div>
           </div>
           <div class="col-lg-4">
@@ -88,7 +88,7 @@
                 <i class="icon-check m-auto"></i>
               </div>
               <h3>Avaliações</h3>
-              <p class="lead mb-0">Precisa de opiniões sobre as clínicas? O Search Doctor tembém oferece esse serviço.</p>
+              <p class="lead mb-0">Precisa de opiniões sobre as clínicas? O Search Doctor também oferece esse serviço.</p>
             </div>
           </div>
         </div>
