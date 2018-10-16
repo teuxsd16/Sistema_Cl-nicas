@@ -27,61 +27,6 @@
       <div class="navbar-menu-wrapper d-flex align-items-center" style="background-color: #2c3e50">
 
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown">
-            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <i class="mdi mdi-file-document-box"></i>
-              <span class="count">7</span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-              <div class="dropdown-item">
-                <p class="mb-0 font-weight-normal float-left">Você tem 10 propostas de consulta
-                </p>
-                <span class="badge badge-info badge-pill float-right">Ver todas</span>
-              </div>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src=<?=  base_url('assets/img/faces/face4.jpg') ?> alt="image" class="profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-medium text-dark">David Grey
-                    <span class="float-right font-weight-light small-text">1 Minuto atrás</span>
-                  </h6>
-                  <p class="font-weight-light small-text">
-                    The meeting is cancelled
-                  </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src=<?= base_url('assets/img/faces/face2.jpg') ?> alt="image" class="profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-medium text-dark">Tim Cook
-                    <span class="float-right font-weight-light small-text">15 Minutes ago</span>
-                  </h6>
-                  <p class="font-weight-light small-text">
-                    New product launch
-                  </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src=<?= base_url('assets/img/faces/face3.jpg') ?> alt="image" class="profile-pic">
-                </div>
-                <div class="preview-item-content flex-grow">
-                  <h6 class="preview-subject ellipsis font-weight-medium text-dark"> Johnson
-                    <span class="float-right font-weight-light small-text">18 Minutes ago</span>
-                  </h6>
-                  <p class="font-weight-light small-text">
-                    Upcoming board meeting
-                  </p>
-                </div>
-              </a>
-            </div>
-          </li>
           <li class="nav-item dropdown d-none d-xl-inline-block">
             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
               <span class="profile-text">Richard V.Welsh</span>
@@ -108,22 +53,11 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item nav-profile">
-            <div class="nav-link">
-              <div class="user-wrapper">
-                <div class="profile-image">
-                  <img src=<?= base_url('assets/img/faces/face1.jpg') ?> alt="profile image">
-                </div>
-                <div class="text-wrapper">
-                  <p class="profile-name">Clínica</p>
-                  <div>
-                    <small class="designation text-muted">Manager</small>
-                    <span class="status-indicator online"></span>
-                  </div>
-                </div>
-              </div>
-              <button class="btn btn-success btn-block">Perfil</button>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href=<?= base_url('admin/perfil') ?>>
+              <i class="menu-icon mdi mdi-account"></i>
+              <span class="menu-title">Perfil</span>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href=<?= base_url('admin/servicos') ?>>
@@ -133,7 +67,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href=<?= base_url('admin/medicos') ?>>
-              <i class="menu-icon mdi mdi-backup-restore"></i>
+              <i class="menu-icon mdi mdi-human"></i>
               <span class="menu-title">Médicos</span>
             </a>
           </li>
@@ -161,12 +95,12 @@
                     <div class="float-right">
                       <p class="mb-0 text-right">Acessos</p>
                       <div class="fluid-container">
-                        <h3 class="font-weight-medium text-right mb-0">65,650</h3>
+                        <h3 class="font-weight-medium text-right mb-0">5,650</h3>
                       </div>
                     </div>
                   </div>
                   <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> 65% lower growth
+                    <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i>Visitantes
                   </p>
                 </div>
               </div>
@@ -182,12 +116,12 @@
                     <div class="float-right">
                       <p class="mb-0 text-right">Avaliações</p>
                       <div class="fluid-container">
-                        <h3 class="font-weight-medium text-right mb-0">5693</h3>
+                        <h3 class="font-weight-medium text-right mb-0">120</h3>
                       </div>
                     </div>
                   </div>
                   <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-calendar mr-1" aria-hidden="true"></i> Weekly Sales
+                    <i class="mdi mdi-calendar mr-1" aria-hidden="true"></i> Desde 14/06/2018
                   </p>
                 </div>
               </div>
@@ -198,17 +132,17 @@
                 <div class="card-body">
                   <div class="clearfix">
                     <div class="float-left">
-                      <i class="mdi mdi-receipt text-warning icon-lg"></i>
+                      <i class="mdi mdi-human text-warning icon-lg"></i>
                     </div>
                     <div class="float-right">
-                      <p class="mb-0 text-right">Propostas de Consulta</p>
+                      <p class="mb-0 text-right">Médicos</p>
                       <div class="fluid-container">
-                        <h3 class="font-weight-medium text-right mb-0">3455</h3>
+                        <h3 class="font-weight-medium text-right mb-0">20</h3>
                       </div>
                     </div>
                   </div>
                   <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-bookmark-outline mr-1" aria-hidden="true"></i> Product-wise sales
+                    <i class="mdi mdi-bookmark-outline mr-1" aria-hidden="true"></i> Junta médica especializada
                   </p>
                 </div>
               </div>
