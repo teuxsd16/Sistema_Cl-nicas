@@ -31,7 +31,7 @@ class Auth extends CI_Controller {
 			if ($this->form_validation->run() == true && $this->user_model->checkLogin($this->input->post())) {
 				redirect('/admin');
 			} else {
-				$this->session->set_flashdata('error_message', 'Dados Incorretos');
+				$data['error_message'] = 'Dados incorretos';
 			}
 		}
 
@@ -42,6 +42,20 @@ class Auth extends CI_Controller {
 
 	public function register()
 	{
+		$rules = array(
+			array(
+				'field' => 'username',
+				'label' => 'Nome de Usuário',
+				'rules' => 'trim|required'
+			),
+			array(
+				'field' => 'password',
+				'label' => 'Senha',
+				'rules' => 'trim|required'
+			)
+		);
+		$this->form_validation->set_rules($rules);
+		$data['success_message'] = 'Usuário cadastrado com sucesso!';
 		$data['action'] = 'register';
 		$this->load->view('app/login', $data);
 	}

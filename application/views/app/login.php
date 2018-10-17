@@ -25,9 +25,16 @@
         <li id="tab-login" class="tab"><a href="#login">Log In</a></li>
       </ul>
 
-      <?php if ($this->session->flashdata('error_message')): ?>
+      <?php if (isset($error_message)): ?>
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
-          <strong>Atenção!</strong> <?= $this->session->flashdata('error_message'); ?>
+          <strong>Atenção!</strong> <?= $error_message; ?>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <?php elseif (isset($success_message)): ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <?= $success_message; ?>
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -70,7 +77,7 @@
               <label>
                 Nome<span class="req">*</span>
               </label>
-              <input name="nome" type="text" required autocomplete="off" />
+              <input name="nome" type="text"  autocomplete="off" />
 
             </div>
 
@@ -78,21 +85,21 @@
               <label>
                 Email<span class="req">*</span>
               </label>
-              <input name="email" type="email" required autocomplete="off"/>
+              <input name="email" type="email"  autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
               <label>
                 Telefone<span class="req">*</span>
               </label>
-              <input name="tel" type="tel" required autocomplete="off"/>
+              <input name="tel" type="tel"  autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
               <label>
                 Senha<span class="req">*</span>
               </label>
-              <input name="senha" type="password" required autocomplete="off"/>
+              <input name="senha" type="password"  autocomplete="off"/>
             </div>
 
             <div class="field-wrap">
@@ -109,7 +116,7 @@
                 <label>
                   CRM<span class="req">*</span>
                 </label>
-                <input name="crn" type="text"required autocomplete="off"/>
+                <input name="crm" type="text"  autocomplete="off"/>
               </div>
             </div>
             <div id="div-clinica" class="collapse">
@@ -118,7 +125,7 @@
                 <label>
                   CNPJ<span class="req">*</span>
                 </label>
-                <input name="cnpj" type="text"required autocomplete="off"/>
+                <input name="cnpj" type="text" autocomplete="off"/>
               </div>
             </div>
 
@@ -127,19 +134,19 @@
               <label>
                 Bairro<span class="req">*</span>
               </label>
-              <input name="bairro" type="text"required autocomplete="off"/>
+              <input name="bairro" type="text" autocomplete="off"/>
             </div>
             <div class="field-wrap">
               <label>
                 Rua<span class="req">*</span>
               </label>
-              <input name="rua" type="text"required autocomplete="off"/>
+              <input name="rua" type="text" autocomplete="off"/>
             </div>
             <div class="field-wrap">
               <label>
                 Número<span class="req">*</span>
               </label>
-              <input name="numero" type="text"required autocomplete="off"/>
+              <input name="numero" type="text" autocomplete="off"/>
               </div>
 
             <button type="submit" class="button button-block"/>Cadastrar</button>
