@@ -44,8 +44,8 @@ class Auth extends CI_Controller {
 	{
 		$rules = array(
 			array(
-				'field' => 'username',
-				'label' => 'Nome de Usuário',
+				'field' => 'nome',
+				'label' => 'Nome',
 				'rules' => 'trim|required'
 			),
 			array(

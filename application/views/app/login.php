@@ -103,7 +103,7 @@
             </div>
 
             <div class="field-wrap">
-              <select id="select-tipo-usuario">
+              <select name="tipo" id="select-tipo-usuario">
                 <option value="cliente">Cliente</option>
                 <option value="medico">Médico</option>
                 <option value="clinica">Clínica</option>
