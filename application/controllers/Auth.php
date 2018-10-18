@@ -54,13 +54,30 @@ class Auth extends CI_Controller {
 				'rules' => 'trim|required'
 			),
 			array(
-				'field' => 'fone',
+				'field' => 'tel',
 				'label' => 'Telefone',
+				'rules' => 'trim|required'
+			),
+			array(
+				'field' => 'senha',
+				'label' => 'Senha',
 				'rules' => 'trim|required'
 			)
 		);
 		$this->form_validation->set_rules($rules);
-		$data['success_message'] = 'Usuário cadastrado com sucesso!';
+		if ($this->input->method(true) == 'POST') {
+			$this->load->model('user_model');
+			$data1 = array(
+				'username' 					=> $this->input->post('nome'),
+				'senha'							=> md5($this->input->post('senha')),
+				'user_group_id'			=> $this->input->post('tipo'),
+			);
+			if ($this->form_validation->run() == true && $this->user_model->Inserir($data1)) {
+				$data['success_message'] = 'Usuário cadastrado com sucesso!';
+			} else {
+				$data['error_message'] = 'Dados incorretos';
+			}
+		}
 		$data['action'] = 'register';
 		$this->load->view('app/login', $data);
 	}

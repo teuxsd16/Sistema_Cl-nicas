@@ -102,11 +102,11 @@
               <input name="senha" type="password"  autocomplete="off"/>
             </div>
 
-            <div class="field-wrap">
+            <div class="field-wrap" >
               <select name="tipo" id="select-tipo-usuario">
-                <option value="cliente">Cliente</option>
-                <option value="medico">Médico</option>
-                <option value="clinica">Clínica</option>
+                <option value="1">Cliente</option>
+                <option value="2">Médico</option>
+                <option value="3">Clínica</option>
               </select>
             </div>
 
@@ -128,26 +128,27 @@
                 <input name="cnpj" type="text" autocomplete="off"/>
               </div>
             </div>
-
-            <!-- Endereço -->
-            <div class="field-wrap">
-              <label>
-                Bairro<span class="req">*</span>
-              </label>
-              <input name="bairro" type="text" autocomplete="off"/>
-            </div>
-            <div class="field-wrap">
-              <label>
-                Rua<span class="req">*</span>
-              </label>
-              <input name="rua" type="text" autocomplete="off"/>
-            </div>
-            <div class="field-wrap">
-              <label>
-                Número<span class="req">*</span>
-              </label>
-              <input name="numero" type="text" autocomplete="off"/>
+            <div class="collapse">
+              <!-- Endereço -->
+              <div class="field-wrap">
+                <label>
+                  Bairro<span class="req">*</span>
+                </label>
+                <input name="bairro" type="text" autocomplete="off"/>
               </div>
+              <div class="field-wrap">
+                <label>
+                  Rua<span class="req">*</span>
+                </label>
+                <input name="rua" type="text" autocomplete="off"/>
+              </div>
+              <div class="field-wrap">
+                <label>
+                  Número<span class="req">*</span>
+                </label>
+                <input name="numero" type="text" autocomplete="off"/>
+                </div>
+            </div>
 
             <button type="submit" class="button button-block"/>Cadastrar</button>
           </form>
