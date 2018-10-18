@@ -82,30 +82,14 @@
         <table class="table bg-dark table-dark">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">Primeiro</th>
-              <th scope="col">Último</th>
-              <th scope="col">Nickname</th>
+              <th scope="col">Número</th>
+              <th scope="col">Instituição</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
               <td>Mark</td>
-              <td>Lee</td>
-              <td>@nct</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
             </tr>
           </tbody>
         </table>
