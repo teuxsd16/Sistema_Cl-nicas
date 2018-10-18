@@ -49,8 +49,13 @@ class Auth extends CI_Controller {
 				'rules' => 'trim|required'
 			),
 			array(
-				'field' => 'password',
-				'label' => 'Senha',
+				'field' => 'email',
+				'label' => 'Email',
+				'rules' => 'trim|required'
+			),
+			array(
+				'field' => 'fone',
+				'label' => 'Telefone',
 				'rules' => 'trim|required'
 			)
 		);
